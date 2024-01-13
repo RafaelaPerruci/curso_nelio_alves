@@ -35,7 +35,7 @@ public class Person {
     public void setHeight(double height) {
         this.height = height;
     }
-    /*
+
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
@@ -59,11 +59,11 @@ public class Person {
         double sumHeight = 0.0;
         int countUnder16 = 0;
 
-        for (Person person : people) {
-            sumHeight += person.getHeight();
-            if (person.getAge() < 16) {
+        for (Person p : people) {
+            sumHeight += p.getHeight();
+            if (p.getAge() < 16) {
                 countUnder16++;
-                System.out.println(person.getName());
+                System.out.println(p.getName());
             }
         }
 
@@ -76,5 +76,5 @@ public class Person {
 
         sc.close();
 
-    }*/
+    }
 }
