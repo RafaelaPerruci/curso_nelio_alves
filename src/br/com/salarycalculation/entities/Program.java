@@ -44,6 +44,11 @@ public class Program {
         String[] monthYear = inputMonthYear.split("/");
         int month = Integer.parseInt(monthYear[0]);
         int year = Integer.parseInt(monthYear[1]);
+        /* [Outra forma de resolução]
+        * Poderia também, apenas recortar a String em substrings e converter diretamente para int:
+            * int month = Integer.parseInt(inputMonthYear.substring(0, 2));
+            * int year = Integer.parseInt(inputMonthYear.substring(3));
+        * */
         System.out.println("Name: " + worker.getName());
         System.out.println("Department: " + worker.getDepartament().getDepartmentName());
         System.out.println("Income for " + inputMonthYear + ": " + String.format("%.2f", worker.income(year, month)));
