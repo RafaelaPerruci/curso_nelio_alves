@@ -15,7 +15,7 @@ public class Program {
 
 
         // BusinessAccount acc5 = (BusinessAccount)acc3;
-        /*if (acc3 instanceof BusinessAccount) {
+        if (acc3 instanceof BusinessAccount) {
             BusinessAccount acc5 = (BusinessAccount)acc3;
             acc5.loan(200.0);
             System.out.println("Loan!");
@@ -24,10 +24,7 @@ public class Program {
             SavingsAccount acc5 = (SavingsAccount)acc3;
             acc5.updateBalance();
             System.out.println("Update!");
-        } */
-        acc3.withdraw(200.0);
-        System.out.println(acc3.getBalance());
-        acc2.withdraw(200.0);
-        System.out.println(acc2.getBalance());
+        }
+
     }
 }
